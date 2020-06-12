@@ -21,8 +21,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    
+                    
                     <li>@Html.ActionLink("Add Course", "Create", "Courses")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -40,5 +40,8 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <link href="~/Content/Css.css" rel="stylesheet" />
+
 </body>
 </html>

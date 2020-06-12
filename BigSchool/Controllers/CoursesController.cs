@@ -35,13 +35,10 @@ namespace BigSchool.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create( CourseViewModel viewModel)
         {
-            //var viewModel = new CourseViewModel
-            //{
-            // Categories = _dbContext.Categories.ToList()
-            // };
-            //return View(viewModel);
+            
             if (!ModelState.IsValid)
             {
                 viewModel.Categories = _dbContext.Categories.ToList();

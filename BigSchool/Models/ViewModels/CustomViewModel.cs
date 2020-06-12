@@ -16,6 +16,6 @@ namespace BigSchool.Models.ViewModels
         public string Date { get; set; }
 
         [Required]
-        public string time { get; set; }
+        public string Time { get; set; }
     }
 }
