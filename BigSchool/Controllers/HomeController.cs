@@ -26,14 +26,14 @@ namespace BigSchool.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Trang mô tả ứng dụng của bạn.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Trang liên hệ của bạn.";
 
             return View();
         }
